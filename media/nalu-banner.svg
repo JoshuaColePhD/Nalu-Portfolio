@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 296" role="img" aria-labelledby="title">
+  <title id="title">Nalu, native macOS dictation</title>
+  <defs>
+    <linearGradient id="base" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#0c1426"/><stop offset="1" stop-color="#163c51"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#46d5e9" stop-opacity=".30"/><stop offset="1" stop-color="#46d5e9" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1080" height="296" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1080" height="296" fill="url(#base)"/>
+    <ellipse cx="855" cy="123" rx="340" ry="230" fill="url(#glow)"/>
+    <g fill="none" stroke="#83dce9" opacity=".18">
+      <circle cx="847" cy="147" r="88"/><circle cx="847" cy="147" r="123"/><circle cx="847" cy="147" r="158"/><circle cx="847" cy="147" r="194"/>
+    </g>
+    <rect x="684" y="102" width="326" height="90" rx="45" fill="#101d30" stroke="#50879a"/>
+    <g stroke="#7de8f2" stroke-width="7" stroke-linecap="round">
+      <path d="M772 141v12 M790 134v26 M809 124v46 M828 133v28 M847 119v56 M866 132v30 M885 126v42 M904 137v20 M922 142v10"/>
+    </g>
+    <g font-family="system-ui, sans-serif">
+      <text x="66" y="76" fill="#80e2ee" font-size="18" font-weight="700" letter-spacing="4">NATIVE MACOS DICTATION</text>
+      <text x="61" y="180" fill="#f1f8ff" font-size="108" font-weight="750" letter-spacing="-5">Nalu</text>
+      <text x="67" y="234" fill="#c0d9e6" font-size="26">On-device speech · AI transcript cleanup</text>
+    </g>
+  </g>
+</svg>
