@@ -6,7 +6,7 @@ A native macOS dictation app I built. Hold Fn, speak into a focused text field, 
 
 [![Live demo preview showing Nalu paste a dictated sentence into a blank editor](media/nalu-live-preview.gif)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-live-demo.mp4)
 
-**[Try the browser demo](https://joshuacolephd.github.io/Nalu-Portfolio/)** · **[Live demo with sound (10 sec)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-live-demo.mp4)** · [Product walkthrough (45 sec)](media/nalu-demo.mp4) · [Dashboard image](media/poster.jpg)
+**[Live demo with sound (10 sec)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-live-demo.mp4)** · [Product walkthrough (45 sec)](media/nalu-demo.mp4) · [Dashboard image](media/poster.jpg)
 
 ## Stack and results
 
