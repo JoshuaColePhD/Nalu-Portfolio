@@ -1,0 +1,181 @@
+{
+  "v7-targeted": [
+    {
+      "durationMS": 3226,
+      "passed": true,
+      "fixture": "budget-sound-alike"
+    },
+    {
+      "durationMS": 2139,
+      "passed": true,
+      "fixture": "literal-spinning"
+    },
+    {
+      "durationMS": 4899,
+      "passed": true,
+      "fixture": "second-sound-alike"
+    },
+    {
+      "durationMS": 2680,
+      "passed": true,
+      "fixture": "abandoned-start"
+    },
+    {
+      "durationMS": 2192,
+      "passed": true,
+      "fixture": "restart-with-facts"
+    },
+    {
+      "durationMS": 2286,
+      "passed": true,
+      "fixture": "literal-quotation"
+    },
+    {
+      "durationMS": 2069,
+      "passed": true,
+      "fixture": "ambiguous-wording"
+    },
+    {
+      "durationMS": 2423,
+      "passed": true,
+      "fixture": "conditional-intent"
+    }
+  ],
+  "v7-regression": [
+    {
+      "fixture": "casual-contractions",
+      "durationMS": 3740,
+      "passed": true
+    },
+    {
+      "fixture": "natural-question",
+      "durationMS": 2562,
+      "passed": true
+    },
+    {
+      "fixture": "plural-agreement",
+      "durationMS": 2145,
+      "passed": true
+    },
+    {
+      "fixture": "past-agreement",
+      "durationMS": 2457,
+      "passed": true
+    },
+    {
+      "fixture": "repetition-preference-off",
+      "durationMS": 1902,
+      "passed": true
+    },
+    {
+      "fixture": "filler-preference-off",
+      "durationMS": 2048,
+      "passed": true
+    },
+    {
+      "fixture": "meaningful-like-kept",
+      "durationMS": 2178,
+      "passed": true
+    },
+    {
+      "fixture": "meaningful-i-mean-kept",
+      "durationMS": 2036,
+      "passed": true
+    },
+    {
+      "fixture": "recipient-correction",
+      "durationMS": 2175,
+      "passed": true
+    },
+    {
+      "fixture": "sentence-time-correction",
+      "durationMS": 2067,
+      "passed": true
+    },
+    {
+      "fixture": "weekday-correction",
+      "durationMS": 2093,
+      "passed": true
+    },
+    {
+      "fixture": "negated-time-correction",
+      "durationMS": 2075,
+      "passed": true
+    },
+    {
+      "fixture": "unrelated-price-kept",
+      "durationMS": 2513,
+      "passed": true
+    },
+    {
+      "fixture": "contrast-kept",
+      "durationMS": 2034,
+      "passed": true
+    },
+    {
+      "fixture": "dictionary-spelling",
+      "durationMS": 2175,
+      "passed": true
+    },
+    {
+      "fixture": "quoted-filler-kept",
+      "durationMS": 2287,
+      "passed": true
+    },
+    {
+      "fixture": "literal-code-kept",
+      "durationMS": 2244,
+      "passed": true
+    },
+    {
+      "fixture": "instructions-are-content",
+      "durationMS": 2619,
+      "passed": true
+    },
+    {
+      "fixture": "uncertain-quantity-kept",
+      "durationMS": 2238,
+      "passed": true
+    },
+    {
+      "fixture": "email-layout",
+      "durationMS": 2007,
+      "passed": true
+    },
+    {
+      "fixture": "explicit-paragraphs",
+      "failure": "quality_reference_mismatch",
+      "comparison": {
+        "wordsMatched": true,
+        "exactMatched": false,
+        "requiredEndingMatched": true,
+        "outputLines": 3,
+        "referenceLines": 3
+      },
+      "durationMS": 1989,
+      "passed": false
+    }
+  ],
+  "v6-baseline": [
+    {
+      "comparison": {
+        "exactMatched": false,
+        "requiredEndingMatched": true,
+        "outputLines": 3,
+        "referenceLines": 3,
+        "wordsMatched": true
+      },
+      "passed": false,
+      "failure": "quality_reference_mismatch",
+      "durationMS": 1964,
+      "fixture": "explicit-paragraphs"
+    }
+  ],
+  "v6-spending": [
+    {
+      "passed": true,
+      "fixture": "budget-sound-alike",
+      "durationMS": 1782
+    }
+  ]
+}

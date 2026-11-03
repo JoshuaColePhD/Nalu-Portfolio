@@ -1,0 +1,348 @@
+{
+  "syntheticGeneratedSpeech": [
+    {
+      "fixture": "short",
+      "passed": true,
+      "cleanupMilliseconds": 1751,
+      "releaseToInsertionMilliseconds": 1898
+    },
+    {
+      "fixture": "short",
+      "passed": true,
+      "cleanupMilliseconds": 1315,
+      "releaseToInsertionMilliseconds": 1387
+    },
+    {
+      "fixture": "short",
+      "passed": true,
+      "cleanupMilliseconds": 1286,
+      "releaseToInsertionMilliseconds": 1360
+    },
+    {
+      "fixture": "negation",
+      "passed": true,
+      "cleanupMilliseconds": 1394,
+      "releaseToInsertionMilliseconds": 1525
+    },
+    {
+      "fixture": "negation",
+      "passed": true,
+      "cleanupMilliseconds": 1167,
+      "releaseToInsertionMilliseconds": 1281
+    },
+    {
+      "fixture": "negation",
+      "passed": true,
+      "cleanupMilliseconds": 1344,
+      "releaseToInsertionMilliseconds": 1455
+    },
+    {
+      "fixture": "correction",
+      "passed": true,
+      "cleanupMilliseconds": 1630,
+      "releaseToInsertionMilliseconds": 1745
+    },
+    {
+      "fixture": "correction",
+      "passed": true,
+      "cleanupMilliseconds": 1308,
+      "releaseToInsertionMilliseconds": 1427
+    },
+    {
+      "fixture": "correction",
+      "passed": true,
+      "cleanupMilliseconds": 909,
+      "releaseToInsertionMilliseconds": 1023
+    }
+  ],
+  "pairedCleanupHTTP": [
+    {
+      "fixture": "hesitations",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1121
+    },
+    {
+      "fixture": "hesitations",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1357
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1023
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1005
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1082
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1111
+    },
+    {
+      "fixture": "negation",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1109
+    },
+    {
+      "fixture": "negation",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 914
+    },
+    {
+      "fixture": "numbers",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1270
+    },
+    {
+      "fixture": "numbers",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 902
+    },
+    {
+      "fixture": "dictionary",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1136
+    },
+    {
+      "fixture": "dictionary",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 993
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1123
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 989
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 2131
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1246
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 0,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 2098
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 0,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1317
+    },
+    {
+      "fixture": "hesitations",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 852
+    },
+    {
+      "fixture": "hesitations",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1051
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 861
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1123
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 954
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1181
+    },
+    {
+      "fixture": "negation",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 845
+    },
+    {
+      "fixture": "negation",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1287
+    },
+    {
+      "fixture": "numbers",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 930
+    },
+    {
+      "fixture": "numbers",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1285
+    },
+    {
+      "fixture": "dictionary",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 901
+    },
+    {
+      "fixture": "dictionary",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1135
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 836
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1093
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1457
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 1920
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 1,
+      "variant": "candidate",
+      "serviceTier": "fast",
+      "passed": true,
+      "duration_ms": 1272
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 1,
+      "variant": "baseline",
+      "serviceTier": "unknown",
+      "passed": true,
+      "duration_ms": 2017
+    }
+  ]
+}

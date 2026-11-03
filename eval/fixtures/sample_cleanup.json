@@ -1,0 +1,89 @@
+{
+  "description": "Synthetic transcripts for the demo sample cleaner. sample is the locked output of DemoSampleCleanup. reference is a hand-labeled fuller cleanup, not a measured model output.",
+  "cases": [
+    {
+      "id": "filler-ready",
+      "raw": "um it's ready",
+      "sample": "It's ready.",
+      "reference": "It's ready.",
+      "note": "A standalone hesitation is removed and the sentence is capitalized."
+    },
+    {
+      "id": "filler-sentence",
+      "raw": "Um, hmm, send it at 5, uh, not 6.",
+      "sample": "Send it at 5, not 6.",
+      "reference": "Send it at 5, not 6.",
+      "note": "Hesitations go away. The number and the real negation stay."
+    },
+    {
+      "id": "repetition",
+      "raw": "the the report is done",
+      "sample": "The report is done.",
+      "reference": "The report is done.",
+      "note": "An immediate repeated word is collapsed."
+    },
+    {
+      "id": "emphasis",
+      "raw": "this is very very good",
+      "sample": "This is very very good.",
+      "reference": "This is very very good.",
+      "note": "Deliberate emphasis is kept. The output checks treat very/really/extremely as emphasis."
+    },
+    {
+      "id": "meaningful-like",
+      "raw": "I like this",
+      "sample": "I like this.",
+      "reference": "I like this.",
+      "note": "The sample cleaner does not try to decide when like is a filler."
+    },
+    {
+      "id": "numbers",
+      "raw": "send it at 5 not 6",
+      "sample": "Send it at 5 not 6.",
+      "reference": "Send it at 5, not 6.",
+      "note": "Numbers stay. The sample cleaner does not insert the comma the reference has."
+    },
+    {
+      "id": "self-correction",
+      "raw": "meet monday, no, tuesday",
+      "sample": "Meet monday, no, tuesday.",
+      "reference": "Meet Tuesday.",
+      "note": "The sample cleaner does not resolve spoken self-corrections. The production prompt does."
+    },
+    {
+      "id": "i-mean",
+      "raw": "call at 5, I mean 6.",
+      "sample": "Call at 5, I mean 6.",
+      "reference": "Call at 6.",
+      "note": "Both quantities stay in the sample. The reference keeps only the correction."
+    },
+    {
+      "id": "identifier",
+      "raw": "iPhone battery is low",
+      "sample": "iPhone battery is low.",
+      "reference": "iPhone battery is low.",
+      "note": "An internal capital is left alone so the word still matches the protected-token check."
+    },
+    {
+      "id": "short",
+      "raw": "okay",
+      "sample": "Okay.",
+      "reference": "Okay.",
+      "note": "A one-word utterance is capitalized and punctuated."
+    },
+    {
+      "id": "paragraphs",
+      "raw": "first line\n\nsecond line",
+      "sample": "First line\n\nsecond line.",
+      "reference": "First line\n\nSecond line.",
+      "note": "Existing paragraph breaks stay. Only the first word is capitalized."
+    },
+    {
+      "id": "json-untouched",
+      "raw": "{ \"a\": 1 }",
+      "sample": "{ \"a\": 1 }",
+      "reference": "{ \"a\": 1 }",
+      "note": "Text that already looks like JSON is not rewritten."
+    }
+  ]
+}
