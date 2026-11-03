@@ -2,13 +2,13 @@
 
 **Native macOS dictation with on-device speech recognition and validated AI cleanup.**
 
+[![Live screen recording of Nalu inserting dictated text into a blank editor](media/nalu-live-preview.gif)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-live-demo.mp4)
+
+**[Watch the live demo with sound](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-live-demo.mp4)** · [45-second product walkthrough](media/nalu-demo.mp4) · [Walkthrough transcript](media/transcript.md)
+
+The live clip shows one continuous take from an empty editor to the text Nalu inserted. The preview loops the last few seconds.
+
 Hold Fn, speak into a focused text field, and release. Nalu transcribes speech on the Mac, sends the transcript for one optional cleanup pass, then checks the result before inserting it. If cleanup fails, the app retains the recognized words and offers Use Original, Retry, or Copy.
-
-[![Watch the Nalu product walkthrough](media/poster.jpg)](media/nalu-demo.mp4)
-
-[Watch the narrated walkthrough](media/nalu-demo.mp4) · [Download the MP4](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/demo-v1/nalu-demo.mp4) · [Transcript](media/transcript.md)
-
-The walkthrough uses native Nalu captures with synthetic dictations. The focused editor sequence illustrates the insertion flow.
 
 ## How it works
 
