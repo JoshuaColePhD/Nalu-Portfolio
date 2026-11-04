@@ -1,0 +1,581 @@
+{
+  "description": "Sanitized original stage timings from the same 36 recorded HTTP requests. Stage totals are not equated with end-to-end time.",
+  "rows": [
+    {
+      "fixture": "hesitations",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "0b4d3d5244cf23e1f611a475d5e5c8f9235a722646d20fbe5af5d71c8db71bee",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2,
+        "account": 2.4,
+        "rate": 2.2,
+        "reserve": 8.1,
+        "provider": 893.5,
+        "meter": 2.5,
+        "commit": 32.5
+      }
+    },
+    {
+      "fixture": "hesitations",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "0b4d3d5244cf23e1f611a475d5e5c8f9235a722646d20fbe5af5d71c8db71bee",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.3,
+        "account": 2.6,
+        "rate": 10.6,
+        "reserve": 8.7,
+        "provider": 1102.1,
+        "meter": 11.3,
+        "commit": 54
+      }
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "f33d6d6e3fe7f71bab7f951e9de23f84373448da6844805111ba08627bc5635f",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 3,
+        "rate": 2.7,
+        "reserve": 9.1,
+        "provider": 825,
+        "meter": 2.9,
+        "commit": 9.9
+      }
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "f33d6d6e3fe7f71bab7f951e9de23f84373448da6844805111ba08627bc5635f",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.8,
+        "rate": 2.6,
+        "reserve": 9,
+        "provider": 762.8,
+        "meter": 2.6,
+        "commit": 8.9
+      }
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "bc40927abe82a05fa76146e606a5eeb17d0e01cdeca60311e41546e52472baad",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.9,
+        "account": 2.6,
+        "rate": 2.3,
+        "reserve": 8.4,
+        "provider": 887.7,
+        "meter": 3,
+        "commit": 9.9
+      }
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "bc40927abe82a05fa76146e606a5eeb17d0e01cdeca60311e41546e52472baad",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.6,
+        "rate": 2.2,
+        "reserve": 8.3,
+        "provider": 918,
+        "meter": 2.5,
+        "commit": 10.2
+      }
+    },
+    {
+      "fixture": "negation",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "d293dfd697b3a0a7594470fb7407fd49b79796811832a55a73074ccee9e2fd0c",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.7,
+        "rate": 2.4,
+        "reserve": 8.4,
+        "provider": 874.9,
+        "meter": 2.5,
+        "commit": 9.6
+      }
+    },
+    {
+      "fixture": "negation",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "d293dfd697b3a0a7594470fb7407fd49b79796811832a55a73074ccee9e2fd0c",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.9,
+        "rate": 4.9,
+        "reserve": 8.2,
+        "provider": 720.2,
+        "meter": 3.2,
+        "commit": 9.9
+      }
+    },
+    {
+      "fixture": "numbers",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "c2d12fb9a4980896bdaa61ce978520c45d32091ed357ff3a60d07478aceff5cd",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.7,
+        "rate": 2.1,
+        "reserve": 8,
+        "provider": 1069.9,
+        "meter": 2.6,
+        "commit": 10.3
+      }
+    },
+    {
+      "fixture": "numbers",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "c2d12fb9a4980896bdaa61ce978520c45d32091ed357ff3a60d07478aceff5cd",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.5,
+        "rate": 2.3,
+        "reserve": 8.3,
+        "provider": 700.8,
+        "meter": 3,
+        "commit": 10
+      }
+    },
+    {
+      "fixture": "dictionary",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "35dee166f581fcc442a040a2db1c7763cfbfa78d6b179f43a20c84fe2d11f815",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.8,
+        "rate": 2.4,
+        "reserve": 8.8,
+        "provider": 931.7,
+        "meter": 2.5,
+        "commit": 9.4
+      }
+    },
+    {
+      "fixture": "dictionary",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "35dee166f581fcc442a040a2db1c7763cfbfa78d6b179f43a20c84fe2d11f815",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2,
+        "account": 2.9,
+        "rate": 2.1,
+        "reserve": 7.6,
+        "provider": 793.9,
+        "meter": 2.4,
+        "commit": 8.8
+      }
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "dbe7016a82a40d90f98c6408ceedc65a2c58b039673475fa7f627f61d4166ca8",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.8,
+        "rate": 2.7,
+        "reserve": 9.1,
+        "provider": 930.5,
+        "meter": 2.6,
+        "commit": 10.7
+      }
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "dbe7016a82a40d90f98c6408ceedc65a2c58b039673475fa7f627f61d4166ca8",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 4.9,
+        "rate": 2.5,
+        "reserve": 8.6,
+        "provider": 786,
+        "meter": 3,
+        "commit": 10.7
+      }
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "c00a95c1cfd27062006248dd55dd69f9bb2d075c4c5ef442646a86c4d03e1334",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.8,
+        "rate": 2.4,
+        "reserve": 9,
+        "provider": 1926.4,
+        "meter": 2.7,
+        "commit": 9.5
+      }
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "c00a95c1cfd27062006248dd55dd69f9bb2d075c4c5ef442646a86c4d03e1334",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.5,
+        "rate": 2,
+        "reserve": 8.5,
+        "provider": 1043.1,
+        "meter": 2.9,
+        "commit": 8.8
+      }
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 0,
+      "variant": "baseline",
+      "input_sha256": "4d5ab9805cc56b5dc6a846b9cce88dede4c2cd9757615b1b1e8741815ec7b9d9",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.8,
+        "account": 2.5,
+        "rate": 2.1,
+        "reserve": 8.5,
+        "provider": 1894.1,
+        "meter": 2.6,
+        "commit": 10.5
+      }
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 0,
+      "variant": "candidate",
+      "input_sha256": "4d5ab9805cc56b5dc6a846b9cce88dede4c2cd9757615b1b1e8741815ec7b9d9",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2,
+        "account": 2.8,
+        "rate": 2.2,
+        "reserve": 7.9,
+        "provider": 1116.3,
+        "meter": 2.8,
+        "commit": 10.2
+      }
+    },
+    {
+      "fixture": "hesitations",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "0b4d3d5244cf23e1f611a475d5e5c8f9235a722646d20fbe5af5d71c8db71bee",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.6,
+        "rate": 2.3,
+        "reserve": 17.4,
+        "provider": 646.5,
+        "meter": 2.6,
+        "commit": 9.2
+      }
+    },
+    {
+      "fixture": "hesitations",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "0b4d3d5244cf23e1f611a475d5e5c8f9235a722646d20fbe5af5d71c8db71bee",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.2,
+        "account": 2.9,
+        "rate": 2.6,
+        "reserve": 9.1,
+        "provider": 845.6,
+        "meter": 2.5,
+        "commit": 10
+      }
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "f33d6d6e3fe7f71bab7f951e9de23f84373448da6844805111ba08627bc5635f",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.7,
+        "account": 2.3,
+        "rate": 2,
+        "reserve": 8,
+        "provider": 663,
+        "meter": 2.4,
+        "commit": 8.8
+      }
+    },
+    {
+      "fixture": "ambiguous_ordinal_duration",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "f33d6d6e3fe7f71bab7f951e9de23f84373448da6844805111ba08627bc5635f",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.7,
+        "rate": 2.4,
+        "reserve": 9,
+        "provider": 927.2,
+        "meter": 2.5,
+        "commit": 11.4
+      }
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "bc40927abe82a05fa76146e606a5eeb17d0e01cdeca60311e41546e52472baad",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.5,
+        "rate": 2.1,
+        "reserve": 7.9,
+        "provider": 719.3,
+        "meter": 3.5,
+        "commit": 8.9
+      }
+    },
+    {
+      "fixture": "meaningful_like",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "bc40927abe82a05fa76146e606a5eeb17d0e01cdeca60311e41546e52472baad",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2,
+        "account": 2.6,
+        "rate": 2.3,
+        "reserve": 8.6,
+        "provider": 966.7,
+        "meter": 2.6,
+        "commit": 11.4
+      }
+    },
+    {
+      "fixture": "negation",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "d293dfd697b3a0a7594470fb7407fd49b79796811832a55a73074ccee9e2fd0c",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.3,
+        "rate": 2,
+        "reserve": 7.7,
+        "provider": 626.8,
+        "meter": 2.3,
+        "commit": 9.6
+      }
+    },
+    {
+      "fixture": "negation",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "d293dfd697b3a0a7594470fb7407fd49b79796811832a55a73074ccee9e2fd0c",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 3.1,
+        "rate": 2.1,
+        "reserve": 8.9,
+        "provider": 1034.4,
+        "meter": 2.5,
+        "commit": 10.1
+      }
+    },
+    {
+      "fixture": "numbers",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "c2d12fb9a4980896bdaa61ce978520c45d32091ed357ff3a60d07478aceff5cd",
+      "status": 200,
+      "stages_ms": {
+        "auth": 7.6,
+        "account": 2.5,
+        "rate": 2.2,
+        "reserve": 8.5,
+        "provider": 728.6,
+        "meter": 2.5,
+        "commit": 8.8
+      }
+    },
+    {
+      "fixture": "numbers",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "c2d12fb9a4980896bdaa61ce978520c45d32091ed357ff3a60d07478aceff5cd",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.3,
+        "account": 3,
+        "rate": 2.5,
+        "reserve": 10,
+        "provider": 1084,
+        "meter": 2.6,
+        "commit": 9.6
+      }
+    },
+    {
+      "fixture": "dictionary",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "35dee166f581fcc442a040a2db1c7763cfbfa78d6b179f43a20c84fe2d11f815",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.7,
+        "account": 2.6,
+        "rate": 1.9,
+        "reserve": 7.6,
+        "provider": 693.7,
+        "meter": 2.5,
+        "commit": 9.6
+      }
+    },
+    {
+      "fixture": "dictionary",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "35dee166f581fcc442a040a2db1c7763cfbfa78d6b179f43a20c84fe2d11f815",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.8,
+        "rate": 2.4,
+        "reserve": 9.5,
+        "provider": 902.1,
+        "meter": 2.8,
+        "commit": 10.6
+      }
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "dbe7016a82a40d90f98c6408ceedc65a2c58b039673475fa7f627f61d4166ca8",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.9,
+        "account": 2.4,
+        "rate": 2.2,
+        "reserve": 8,
+        "provider": 637.4,
+        "meter": 4.5,
+        "commit": 10
+      }
+    },
+    {
+      "fixture": "fillers_disabled",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "dbe7016a82a40d90f98c6408ceedc65a2c58b039673475fa7f627f61d4166ca8",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.1,
+        "account": 2.9,
+        "rate": 2.3,
+        "reserve": 8.7,
+        "provider": 893.5,
+        "meter": 2.9,
+        "commit": 11.3
+      }
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "c00a95c1cfd27062006248dd55dd69f9bb2d075c4c5ef442646a86c4d03e1334",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2.3,
+        "account": 2.5,
+        "rate": 2.2,
+        "reserve": 8.5,
+        "provider": 1262.4,
+        "meter": 2.3,
+        "commit": 8.9
+      }
+    },
+    {
+      "fixture": "paragraph_spelled",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "c00a95c1cfd27062006248dd55dd69f9bb2d075c4c5ef442646a86c4d03e1334",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.6,
+        "rate": 2.2,
+        "reserve": 8.5,
+        "provider": 1723.4,
+        "meter": 2.6,
+        "commit": 11.7
+      }
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 1,
+      "variant": "candidate",
+      "input_sha256": "4d5ab9805cc56b5dc6a846b9cce88dede4c2cd9757615b1b1e8741815ec7b9d9",
+      "status": 200,
+      "stages_ms": {
+        "auth": 1.8,
+        "account": 2.4,
+        "rate": 2.1,
+        "reserve": 8,
+        "provider": 1064.6,
+        "meter": 2.5,
+        "commit": 16.3
+      }
+    },
+    {
+      "fixture": "paragraph_digits",
+      "round": 1,
+      "variant": "baseline",
+      "input_sha256": "4d5ab9805cc56b5dc6a846b9cce88dede4c2cd9757615b1b1e8741815ec7b9d9",
+      "status": 200,
+      "stages_ms": {
+        "auth": 2,
+        "account": 2.7,
+        "rate": 2.2,
+        "reserve": 8.6,
+        "provider": 1824.2,
+        "meter": 2.9,
+        "commit": 10.9
+      }
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "description": "Frozen synthetic inputs and reference criteria for the October 28, 2026 paired HTTP experiment. References are expectations, not stored model responses. Public export contains no user dictation.",
+  "cases": [
+    {
+      "id": "hesitations",
+      "input": {
+        "transcript": "Um, uh, hmm, please send the report.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "Please send the report.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "0b4d3d5244cf23e1f611a475d5e5c8f9235a722646d20fbe5af5d71c8db71bee"
+    },
+    {
+      "id": "ambiguous_ordinal_duration",
+      "input": {
+        "transcript": "The tool worked well, however, it had about a 42nd delay.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "The tool worked well; however, it had about a 42nd delay.",
+      "qualityCheck": {
+        "kind": "required_fragments",
+        "requiredFragments": [
+          "tool worked well",
+          "it had about a 42nd delay"
+        ],
+        "minimumWords": 8
+      },
+      "input_sha256": "f33d6d6e3fe7f71bab7f951e9de23f84373448da6844805111ba08627bc5635f"
+    },
+    {
+      "id": "meaningful_like",
+      "input": {
+        "transcript": "Um, I like this design.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "I like this design.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "bc40927abe82a05fa76146e606a5eeb17d0e01cdeca60311e41546e52472baad"
+    },
+    {
+      "id": "negation",
+      "input": {
+        "transcript": "Hmm, do not delete the backup. Never upload it.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "Do not delete the backup. Never upload it.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "d293dfd697b3a0a7594470fb7407fd49b79796811832a55a73074ccee9e2fd0c"
+    },
+    {
+      "id": "numbers",
+      "input": {
+        "transcript": "Uh, keep the timeout at 5000 and the price at 12.50.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "Keep the timeout at 5000 and the price at 12.50.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "c2d12fb9a4980896bdaa61ce978520c45d32091ed357ff3a60d07478aceff5cd"
+    },
+    {
+      "id": "dictionary",
+      "input": {
+        "transcript": "Um, ask Jozie to review IrisOS.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [
+          "Jozie → Josie",
+          "IrisOS"
+        ],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "Ask Josie to review IrisOS.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "35dee166f581fcc442a040a2db1c7763cfbfa78d6b179f43a20c84fe2d11f815"
+    },
+    {
+      "id": "fillers_disabled",
+      "input": {
+        "transcript": "Um, please send the report.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": false,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "Um, please send the report.",
+      "qualityCheck": {
+        "kind": "normalized_reference"
+      },
+      "input_sha256": "dbe7016a82a40d90f98c6408ceedc65a2c58b039673475fa7f627f61d4166ca8"
+    },
+    {
+      "id": "paragraph_spelled",
+      "input": {
+        "transcript": "Um, I wanted to share a quick update about the team meeting on Thursday at three p.m. We need to review the revised report, confirm the budget of two thousand five hundred dollars, and assign the remaining tasks. Uh, Maria will prepare the slides, James will check the numbers, and I will send the agenda tomorrow morning. Please make sure everyone receives the same version of the document. The deadline is Friday, and we should not move it without discussing the change first. I also want the final summary to include our decisions, the person responsible for each task, and the date each item is due. Um, if anything is unclear, please ask before making changes. Our goal is to leave the meeting with a clear plan and no missing information.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "I wanted to share a quick update about the team meeting on Thursday at 3 p.m. We need to review the revised report, confirm the budget of $2,500, and assign the remaining tasks. Maria will prepare the slides, James will check the numbers, and I will send the agenda tomorrow morning. Please make sure everyone receives the same version of the document. The deadline is Friday, and we should not move it without discussing the change first. I also want the final summary to include our decisions, the person responsible for each task, and the date each item is due. If anything is unclear, please ask before making changes. Our goal is to leave the meeting with a clear plan and no missing information.",
+      "qualityCheck": {
+        "kind": "required_fragments",
+        "requiredFragments": [
+          "team meeting",
+          "revised report",
+          "Maria",
+          "James",
+          "Friday",
+          "person responsible for each task",
+          "date each item is due",
+          "clear plan and no missing information"
+        ],
+        "minimumWords": 100
+      },
+      "input_sha256": "c00a95c1cfd27062006248dd55dd69f9bb2d075c4c5ef442646a86c4d03e1334"
+    },
+    {
+      "id": "paragraph_digits",
+      "input": {
+        "transcript": "Um, I wanted to share a quick update about the team meeting on Thursday at 3 p.m. We need to review the revised report, confirm the budget of $2,500, and assign the remaining tasks. Uh, Maria will prepare the slides, James will check the numbers, and I will send the agenda tomorrow morning. Please make sure everyone receives the same version of the document. The deadline is Friday, and we should not move it without discussing the change first. I also want the final summary to include our decisions, the person responsible for each task, and the date each item is due. Um, if anything is unclear, please ask before making changes. Our goal is to leave the meeting with a clear plan and no missing information.",
+        "appProfile": "Plain text. Preserve meaning.",
+        "glossary": [],
+        "preferences": {
+          "removeFillers": true,
+          "removeRepetitions": true,
+          "paragraphStyle": "spokenBreaksOnly"
+        }
+      },
+      "reference": "I wanted to share a quick update about the team meeting on Thursday at 3 p.m. We need to review the revised report, confirm the budget of $2,500, and assign the remaining tasks. Maria will prepare the slides, James will check the numbers, and I will send the agenda tomorrow morning. Please make sure everyone receives the same version of the document. The deadline is Friday, and we should not move it without discussing the change first. I also want the final summary to include our decisions, the person responsible for each task, and the date each item is due. If anything is unclear, please ask before making changes. Our goal is to leave the meeting with a clear plan and no missing information.",
+      "qualityCheck": {
+        "kind": "required_fragments",
+        "requiredFragments": [
+          "team meeting",
+          "revised report",
+          "Maria",
+          "James",
+          "Friday",
+          "person responsible for each task",
+          "date each item is due",
+          "clear plan and no missing information"
+        ],
+        "minimumWords": 100
+      },
+      "input_sha256": "4d5ab9805cc56b5dc6a846b9cce88dede4c2cd9757615b1b1e8741815ec7b9d9"
+    }
+  ]
+}
