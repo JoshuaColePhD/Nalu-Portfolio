@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "exported_on": "2026-11-04",
+  "scope": "Recorded synthetic evidence and frozen reference inputs. No stored model responses or fresh inference. No user dictation.",
+  "public_results_revision": "616b743a8b8e8bdca52bd32d2383e1d895c339ee",
+  "implementation_review": {
+    "date": "2026-11-04",
+    "source_repository": "JoshuaColePhD/Nalu (private)",
+    "source_revision": "6d2f67003b30228afe71db175f92be1f7a645d0d",
+    "paths": [
+      "Commerce/providers.mjs",
+      "Commerce/usage.mjs",
+      "Commerce/test/usage.test.mjs",
+      "Nalu/Support/NaluDiagnostics.swift"
+    ],
+    "scope": "Read-only inspection supports the architecture/accounting description. No new private runtime verification or pricing check."
+  },
+  "http_experiment": {
+    "recorded_at": "2026-10-28T23:43:26.433407+00:00",
+    "source_repository": "JoshuaColePhD/Nalu (private)",
+    "baseline_revision": "db528a7eec9843de1b7ec4ba837a1f1021ea07e3",
+    "candidate_revision": "fd178b8a995ff32e8544791526d9417d6470e87a",
+    "recorded_model": "gpt-6-luna",
+    "prompt_version": "cleanup-v6-single-pass",
+    "rounds": 2,
+    "fixture_count": 9,
+    "baseline_served_tier": "unknown",
+    "candidate_served_tier": "fast",
+    "fixture_sources": [
+      {
+        "path": "Commerce/verify-cleanup.mjs",
+        "git_blob_sha": "817880146433bb76d18cb2b0e6c4bd3807ef74a1"
+      },
+      {
+        "path": "Commerce/test/fixtures/long-cleanup.json",
+        "git_blob_sha": "ed14aeb04cff0ba33265d63cfb704fb09d3266b4"
+      }
+    ],
+    "fixture_recovery": "Both source files had identical blob SHAs at both experiment revisions. Export materializes the two paragraph variants and request defaults. Each input SHA-256 matches the original paired report.",
+    "input_hash_encoding": "UTF-8 JSON with insertion order as stored, unescaped Unicode and no separator whitespace; equivalent to the original JSON.stringify(input).",
+    "p95_method": "Nearest rank: sorted durations at ceil(0.95*n)-1.",
+    "limitations": [
+      "Two rounds over nine synthetic inputs; no general latency or real-world quality claim.",
+      "Baseline served tier was not reported.",
+      "Both paired arms included an accounting-overlap experiment. The final candidate restored original serial accounting and passed nine separate quality checks; paired speed was not remeasured after that restoration.",
+      "The original service runner and production validator remain private. References describe expected output; model response text is not included."
+    ]
+  },
+  "prompt_suites": {
+    "v7-targeted": {
+      "planned_cases": 8,
+      "recorded_fixtures": [
+        "budget-sound-alike",
+        "literal-spinning",
+        "second-sound-alike",
+        "abandoned-start",
+        "restart-with-facts",
+        "literal-quotation",
+        "ambiguous-wording",
+        "conditional-intent"
+      ]
+    },
+    "v7-regression": {
+      "planned_cases": 24,
+      "recorded_fixtures": [
+        "casual-contractions",
+        "natural-question",
+        "plural-agreement",
+        "past-agreement",
+        "repetition-preference-off",
+        "filler-preference-off",
+        "meaningful-like-kept",
+        "meaningful-i-mean-kept",
+        "recipient-correction",
+        "sentence-time-correction",
+        "weekday-correction",
+        "negated-time-correction",
+        "unrelated-price-kept",
+        "contrast-kept",
+        "dictionary-spelling",
+        "quoted-filler-kept",
+        "literal-code-kept",
+        "instructions-are-content",
+        "uncertain-quantity-kept",
+        "email-layout",
+        "explicit-paragraphs"
+      ]
+    },
+    "v6-baseline": {
+      "planned_cases": 1,
+      "recorded_fixtures": [
+        "explicit-paragraphs"
+      ]
+    },
+    "v6-spending": {
+      "planned_cases": 1,
+      "recorded_fixtures": [
+        "budget-sound-alike"
+      ]
+    }
+  },
+  "expected_summary": {
+    "http": {
+      "baseline": {
+        "requests": 18,
+        "passed": 18,
+        "median_ms": 1135.5,
+        "p95_ms": 2131
+      },
+      "candidate": {
+        "requests": 18,
+        "passed": 18,
+        "median_ms": 971.5,
+        "p95_ms": 1457
+      },
+      "requests": 36,
+      "median_paired_gain_ms": 245.5,
+      "median_reduction_percent": 14.4
+    },
+    "generated_speech": {
+      "requests": 9,
+      "passed": 9,
+      "median_cleanup_ms": 1315,
+      "median_release_to_simulated_insertion_ms": 1427
+    },
+    "prompts": {
+      "v7-targeted": {
+        "planned": 8,
+        "recorded": 8,
+        "passed": 8,
+        "failed": 0,
+        "unrun": 0
+      },
+      "v7-regression": {
+        "planned": 24,
+        "recorded": 21,
+        "passed": 20,
+        "failed": 1,
+        "unrun": 3
+      },
+      "v6-baseline": {
+        "planned": 1,
+        "recorded": 1,
+        "passed": 0,
+        "failed": 1,
+        "unrun": 0
+      },
+      "v6-spending": {
+        "planned": 1,
+        "recorded": 1,
+        "passed": 1,
+        "failed": 0,
+        "unrun": 0
+      }
+    }
+  },
+  "sha256": {
+    "evidence/latency-results.json": "bf11f5f47da1f89df2e563ac2ebfbe25f5c465ea7aeb465651d214e0f955ece9",
+    "evidence/prompt-results.json": "da000e3a54c71ef008daeca6877598c6b0e52eaafb862b828cfd90a44781ae28",
+    "eval/fixtures/production_cleanup.json": "d566ee634c9c45b7181c499ccd47f960dba25b57751234f6569d045526335832",
+    "evidence/stage-timings.json": "ee6232453008e089d2843f688f402b7c582b327073a5c4ea13ea8c9ab3593eb4"
+  }
+}
