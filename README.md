@@ -10,15 +10,22 @@ Hold Fn, speak, and release. Nalu transcribes on your Mac, optionally cleans up 
 
 Recorded native dictation into Microsoft Word. [Download the 20-second video (MP4)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4).
 
-The native app and service source are private. This repository shares sample code and benchmark evidence. The browser sample runs fixed cleanup rules locally, without AI.
+The native app and service source are private. Public sample code and recorded benchmarks are included here. The browser sample uses fixed local rules, without AI.
 
 ## What I built
 
-I own the product requirements and engineering decisions, with AI assistance in implementation and verification.
+I lead product and engineering decisions, with AI assistance in implementation and verification.
 
 - Built dictation into the current app, with checks for changed details and recovery when cleanup or insertion fails.
 - Connected the OpenAI Responses API with timeouts, versioned prompts, cost tracking, and timing logs.
 - Compared cleanup changes on matched inputs and used broader tests to decide which updates to release or hold.
+
+## Engineering decisions
+
+**Validate before insertion.** Checks flag changed numbers and negation, while recovery handles cleanup or insertion failures. These checks constrain edits; they do not prove identical meaning.
+
+**Hold changes without sufficient evidence.** A prompt update passed **8/8 targeted checks**, but broader testing recorded **20 passes, one failure, and three unrun cases**. I held it: the existing prompt already fixed the motivating mishearing, and the formatting mismatch remained unresolved.
+
 
 ## Results
 
@@ -30,11 +37,11 @@ I own the product requirements and engineering decisions, with AI assistance in 
 
 In two rounds of nine synthetic inputs on October 28, 2026, median service-request time decreased **14.4%**. Both arms included the same accounting experiment. The final service restored serial accounting; its speed was not remeasured. These measurements exclude full microphone-to-editor latency. [Methods and limitations](evidence/benchmarks.md)
 
-A separate prompt update passed **8/8 targeted checks**, but a broader suite recorded **20 passes, one failure, and three unrun cases**. I held the update: the existing prompt already fixed the motivating mishearing, and the formatting regression remained unresolved.
-
 ## How it works
 
-Swift, SwiftUI, AppKit, and Apple Speech handle capture and insertion on the Mac. A Node.js service handles cloud cleanup, validates the returned text, and records aggregate provider usage in PostgreSQL. Timing logs help separate speech recognition, service wait, validation, and insertion delays.
+Capture → transcribe on the Mac → optional cloud cleanup → validate → insert.
+
+Swift and Apple Speech handle the native workflow. The Node.js service records provider token usage in PostgreSQL and estimates costs; stage timings expose where requests wait. [Architecture, metering, and limitations](docs/engineering.md).
 
 ## Explore further
 
