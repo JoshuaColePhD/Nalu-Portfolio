@@ -4,13 +4,15 @@
 
 Hold Fn, speak, and release. Nalu transcribes on your Mac, optionally cleans up the text with AI, and checks important details such as numbers and negation before inserting it into the focused app.
 
-**[Try sample cleanup in your browser](https://joshuacolephd.github.io/Nalu-Portfolio/)** · **[How I built it](docs/engineering.md)**
+## Demo
 
-![Recorded native dictation showing the Nalu Dock pill and text appearing in Microsoft Word](media/nalu-word-preview.gif)
+[![Watch Nalu dictate into Microsoft Word: animated native app preview](media/nalu-word-preview.gif)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4)
 
-Recorded native dictation into Microsoft Word. [Download the 20-second video (MP4)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4).
+**[Watch the 20-second native demo (MP4)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4)** · [Try the browser sample](https://joshuacolephd.github.io/Nalu-Portfolio/) · [Engineering case study](docs/engineering.md)
 
-The native app and service source are private. Public sample code and recorded benchmarks are included here. The browser sample uses fixed local rules, without AI.
+The looping preview shows recorded dictation into Microsoft Word. The browser sample uses fixed local rules, without AI.
+
+The native app and service source are private. Public sample code and recorded benchmarks are included here. This is an engineering portfolio, not an app download.
 
 ## What I built
 
@@ -25,7 +27,6 @@ I lead product and engineering decisions, with AI assistance in implementation a
 **Validate before insertion.** Checks flag changed numbers and negation, while recovery handles cleanup or insertion failures. These checks constrain edits; they do not prove identical meaning.
 
 **Hold changes without sufficient evidence.** A prompt update passed **8/8 targeted checks**, but broader testing recorded **20 passes, one failure, and three unrun cases**. I held it: the existing prompt already fixed the motivating mishearing, and the formatting mismatch remained unresolved.
-
 
 ## Results
 
