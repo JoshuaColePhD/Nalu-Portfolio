@@ -6,11 +6,11 @@ Hold Fn, speak, and release. Nalu transcribes on your Mac, optionally cleans up 
 
 ## Demo
 
-[![Watch Nalu dictate into Microsoft Word: animated native app preview](media/nalu-word-preview.gif)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4)
+[![Preview the edited Nalu showcase in Microsoft Word](media/nalu-showcase-preview.gif)](media/nalu-showcase.mp4)
 
-**[Watch the 20-second native demo (MP4)](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4)** · [Try the browser sample](https://joshuacolephd.github.io/Nalu-Portfolio/) · [Engineering case study](docs/engineering.md)
+**[Watch the 11-second showcase (MP4)](media/nalu-showcase.mp4)** · [Watch the full native recording](https://github.com/JoshuaColePhD/Nalu-Portfolio/releases/download/live-demo-v1/nalu-word-demo.mp4) · [Try the browser sample](https://joshuacolephd.github.io/Nalu-Portfolio/) · [Engineering case study](docs/engineering.md)
 
-The looping preview shows recorded dictation into Microsoft Word. The browser sample uses fixed local rules, without AI.
+The video combines a full-screen Word screenshot with the document text, Nalu indicator animation, and microphone audio from a real recorded dictation. The indicator is positioned above the Dock, and its Word icon is replaced with a sharper copy. The full-screen layout is composited; it is not a continuous screen recording. The additional sentences shown after the recorded result are illustrative text, not part of the spoken take. The browser sample uses fixed local rules, without AI.
 
 The native app and service source are private. Public sample code and recorded benchmarks are included here. This is an engineering portfolio, not an app download.
 
