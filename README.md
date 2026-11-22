@@ -1,5 +1,7 @@
 # Nalu
 
+[![Evidence checks](https://github.com/JoshuaColePhD/Nalu-Portfolio/actions/workflows/evidence.yml/badge.svg)](https://github.com/JoshuaColePhD/Nalu-Portfolio/actions/workflows/evidence.yml)
+
 **Dictate into the Mac app you’re using.**
 
 Hold Fn, speak, and release. Nalu transcribes on your Mac, optionally cleans up the text with AI, and checks important details such as numbers and negation before inserting it into the focused app.
